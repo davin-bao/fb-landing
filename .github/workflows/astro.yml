@@ -45,15 +45,8 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 22
-        cache: 'npm'
-
-    - name: Setup Pages
-      id: pages
-      uses: actions/configure-pages@v5
-
-    - run: echo "1${{ steps.pages.outputs.origin }}"
-    - run: echo "1${{ steps.pages.outputs.base_path }}"
-    - run: echo "1${{ env.BUILD_PATH }}"
+        cache: ${{ steps.detect-package-manager.outputs.manager }}
+        cache-dependency-path: ${{ env.BUILD_PATH }}/${{ steps.detect-package-manager.outputs.lockfile }}
 
     - name: Install dependencies
       run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
@@ -61,11 +54,17 @@ jobs:
 
     - name: Ensure NuxtHub module is installed
       run: npx nuxthub@latest ensure
+      
+    - name: Build with Astro
+      run: |
+        ${{ steps.detect-package-manager.outputs.runner }} astro build
+      working-directory: ${{ env.BUILD_PATH }}
+
     # - name: Build application
     #   run: npm run build
 
-    # - name: Deploy to NuxtHub
-    #   uses: nuxt-hub/action@v1
-    #   id: deploy
-    #   with:
-    #     project-key: fb-landing-kbyn
+    - name: Deploy to NuxtHub
+      uses: nuxt-hub/action@v1
+      id: deploy
+      with:
+        project-key: fb-landing-kbyn
