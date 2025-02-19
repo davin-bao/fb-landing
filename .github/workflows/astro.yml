@@ -25,3 +25,15 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+
+    - name: Ensure NuxtHub module is installed
+      run: npx nuxthub@latest ensure
+
+    - name: Build application
+      run: npm run build
+
+    - name: Deploy to NuxtHub
+      uses: nuxt-hub/action@v1
+      id: deploy
+      with:
+        project-key: fb-landing-kbyn
