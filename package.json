@@ -1,30 +1,20 @@
 {
-  "name": "@lexington/starter",
-  "version": "0.0.1",
+  "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@astrojs/mdx": "^2.0.1",
-    "@astrojs/rss": "^4.0.1",
-    "@astrojs/sitemap": "^3.0.3",
-    "@astrolib/seo": "^1.0.0-beta.5",
-    "astro-icon": "^1.0.0-next.2",
-    "astro-robots-txt": "^1.0.0",
-    "lodash.merge": "^4.6.2",
-    "unpic": "^3.17.0"
-  },
-  "devDependencies": {
-    "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/tailwind": "^5.0.3",
-    "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.10",
-    "astro": "^4.9.2",
-    "tailwindcss": "^3.4.1"
+    "@nuxtjs/i18n": "^9.2.0",
+    "nuxt": "^3.15.4",
+    "shadcn-vue": "^0.11.3",
+    "vue": "latest",
+    "vue-i18n": "^11.1.1",
+    "vue-router": "latest"
   }
 }
