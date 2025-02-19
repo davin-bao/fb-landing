@@ -1,0 +1,18 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Login from "@/components/Forms/Login.astro";
+
+
+import { locales } from '@/i18n';
+export const prerender = true;
+export async function getStaticPaths() {
+	return Object.entries(locales).map(([locale, label]) => ({
+		params: { locale }
+	}));
+}
+---
+
+
+<BaseLayout>
+  <Login />
+</BaseLayout>

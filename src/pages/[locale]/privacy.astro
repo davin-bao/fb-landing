@@ -1,0 +1,22 @@
+---
+import SinglePageLayout from "@/layouts/SinglePageLayout.astro";
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+    const entities = await getCollection('privacy')
+    const paths = entities.map(entity => {
+		const [locale, ...slug] = entity.slug.split('/')
+		return {
+			params: { locale: locale  || 'en', slug: slug.join('/') || 'undefined' }, 
+			props: entity
+		}
+	})
+
+	return paths;
+}
+const entity = Astro.props
+const { Content } = await entity.render()
+---
+<SinglePageLayout  entity={entity}>
+	<Content />
+</SinglePageLayout>

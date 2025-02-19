@@ -1,0 +1,87 @@
+---
+import { SITE } from '@/libs/config'
+import { useTranslations } from '@/i18n'
+
+const { locale } = Astro.params
+const t = useTranslations(locale)
+const response = await fetch(Astro.site + 'api/plan?' + new URLSearchParams({
+    siteId: SITE.siteId
+}))
+const res = await response.json()
+let { data: pricings } = res
+
+pricings = [pricings[0], pricings[1]]
+
+const priceBorderDefaultClass = 'md:w-1/' + pricings.length + ' md:mt-px w-full mb-10 md:mb-0 border-2 border-primary-lighter md:border-none rounded-lg md:rounded-none'
+const priceBorderPopularClass = 'md:w-1/' + pricings.length + ' md:-mt-px w-full mb-10 md:mb-0 border-2 rounded-lg border-accent relative'
+const entity = Astro.props
+
+
+function getMonthPrice(item) {
+	let price = ''
+	if (item.price === 0) {
+		price = t('pricing.free')
+	} else {
+		price = '$'+item.price
+	}
+
+	return '<span class="text-5xl text-primary font-medium leading-none">'+ price + '</span>' +
+	(item.price > 0 ? ('<span class="text-sm text-primary-lighter"> /' + t('pricing.perMonth') + '</span>') : '')
+}
+
+function getYearPrice(item) {
+	let price = ''
+	if (item.price === 0) {
+		price = t('pricing.free')
+	} else {
+		price = t('pricing.charging') + ' $'+(item.price*12) + t('pricing.perYear')
+	}
+	return '<span class="text-sm text-primary-lighter">' + price + '</span>'
+}
+
+---	
+<section aria-labelledby="pricing-section" id="pricing">
+  <div class="lg:px-16 max-w-7xl md:px-12 mx-auto px-8 pt-12 scroll-mt-12">
+    <div class="text-center">
+			<div class="flex justify-center text-lg">{ t('pricing.headTips') }</div>
+    </div>
+  </div>
+  <div class="items-center px-8 pb-12 mx-auto max-w-7xl lg:px-16">
+    <section class="text-primary-lighter body-font overflow-hidden">
+			<div class="container px-5 py-12 mx-auto flex flex-wrap">
+				<div class="flex w-full flex-wrap md:border border-primary-lighter rounded-lg">
+					{pricings.map((item) => (
+					<div class={item.is_popular == 1 ? priceBorderPopularClass : priceBorderDefaultClass}>
+						{ item.is_popular == 1 && <span class="bg-accent text-default px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span> }
+						<div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+							<div class="tracking-widest">{item.name}</div>
+							<div class="mb-4 mt-2" set:html={getMonthPrice(item)} />
+							<span class="text-sm text-primary-lighter" set:html={getYearPrice(item)} />
+						</div>
+						{JSON.parse(item.content).map((val, key) => (
+						<div class="text-sm bg-gray-100 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-primary-lighter">
+						<svg class="flex-shrink-0 w-5 h-5 text-accent" fill="currentColor"
+																viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+																<path fill-rule="evenodd"
+																		d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+																		clip-rule="evenodd"></path>
+														</svg>
+						{ val > 0 ? val : t('pricing.unlimited') } {t('pricing.label.' + key)}
+						</div>
+						))}
+						<div class="border-t border-primary-lighter p-6 text-center rounded-bl-lg">
+							<button class="flex items-center mt-auto text-default bg-primary border-0 py-2 px-4 w-full focus:outline-none hover:bg-accent rounded">
+								{ item.price > 0 ? t('pricing.subscribeBtn') : t('pricing.getStartBtn') }
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+									<path d="M5 12h14M12 5l7 7-7 7"></path>
+								</svg>
+							</button>
+							<div class="text-xs mt-3">{ item.price > 0 ? t('pricing.otherTips') : t('pricing.freeTips') }</div>
+						</div>
+					</div>
+					))}
+				</div>
+			</div>
+		</section>
+  </div>
+</section>

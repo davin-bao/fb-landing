@@ -1,0 +1,31 @@
+---
+import { Icon } from 'astro-icon/components'
+import { locales } from '@/i18n'
+import { SITE } from '@/libs/config'
+
+const { locale } = Astro.params
+const target = Astro.url
+---
+<a href=`${SITE.appSite}locale?target=${target}`
+  class="inline-flex items-center h-8 justify-center px-4 py-2 text-lg font-medium text-link bg-secondaryBg-100 rounded-lg group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-secondaryBg-50 active:bg-secondaryBg-200 hover:text-accent focus-visible:outline-black">
+  <Icon class="md:block hidden" name="globe" />
+  <span class="md:hidden inline-block text-sm">{locales[locale]}</span>
+</a>
+
+<script is:inline define:vars={{ locale }}>
+  function getQuery() {
+    const queryString = window.location.search
+    const urlParams = new URLSearchParams(queryString)
+    const query = Object.fromEntries(urlParams)
+    return query
+  }
+
+  const query = getQuery()
+  if (query?.locale) {
+    const currentLocale = query?.locale || 'en'
+    localStorage.setItem('locale', JSON.stringify({ data: currentLocale }))
+    if (locale != currentLocale) {
+      window.location.href = window.location.pathname.replace(locale, currentLocale)
+    }
+  }
+</script>

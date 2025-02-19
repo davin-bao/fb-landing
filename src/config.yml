@@ -1,0 +1,108 @@
+site:
+  name: Fb Ad Sorter
+  site: https://www.fbadsorter.com/
+  appSite: https://app.fbadsorter.com/
+  base: '/'
+  siteId: p1innt5z9g7ztp1
+  trailingSlash: ignore
+  service: service@anreen.com
+  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+
+# Default SEO metadata
+metadata:
+  title:
+    default: Fb Ad Sorter
+    template: '%s — Fb Ad Sorter'
+  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  robots:
+    index: true
+    follow: true
+  facebook:
+    appId: 123
+  openGraph:
+    site_name: Fb Ad Sorter
+    images:
+      - url: '@/assets/images/default.png'
+        width: 1200
+        height: 628
+    type: website
+    article:
+      authors:
+        - https://www.facebook.com/FbSorter/
+    profile:
+      firstName: Davin
+      lastName: Sorter
+      username: FbSorter
+      gender: male
+  twitter:
+    handle: '@onwidget'
+    site: '@onwidget'
+    cardType: summary_large_image
+
+i18n:
+  default: en
+  fallback:
+    - es
+  supports:
+    - en
+    - es
+    - fr
+    - zh-cn
+
+theme:
+  fonts:
+    sans: Inter
+  colors:
+    default: '#FFFFFF'
+    header: '#FFFFFF'
+    footer: '#FFFFFF'
+    primary: '#000000'
+    secondary: '#283CFF'
+    accent: '#8B00FF'
+    info: '#3b82f6'
+    success: '#65a30d'
+    warn: '#F59E0B'
+    danger: '#dc2626'
+    link: '#0B0B0B'
+
+header:
+  menus:
+    - text:  menu.features
+      href: /#features
+    - text: menu.pricing
+      href: /#pricing
+    - text: menu.blog
+      href: /blog
+    - text: menu.faq
+      href: /faq
+
+footer:
+  links:
+    - title: menu.product
+      links:
+        - text:  menu.features
+          href: /#features
+        - text: menu.faq
+          href: /faq
+        - text: menu.pricing
+          href: /#pricing
+    - title: menu.support
+      links:
+        - text:  menu.terms
+          href: /terms
+        - text: menu.privacy
+          href: /privacy
+        - text: menu.extensions.privacy
+          href: /extensions/privacy
+    - title: menu.resource
+      links:
+        - text: menu.blog
+          href: /blog
+  socials:
+    - ariaLabel: RSS
+      icon: rss
+      href: /rss.xml
+    - ariaLabel: Instagram
+      icon: instagram
+      href: https://github.com/onwidget/fb_ad_sorter
+  note: <p class="text-sm text-neutral-600 lg:col-span-2 mt-4"> © {year} <a class="text-link hover:text-accent" href="{SITE.base}">{SITE.name}</a>. All rights reserved.</p>

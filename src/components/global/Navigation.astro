@@ -1,0 +1,49 @@
+---
+  import { getRelativeLocaleUrl } from 'astro:i18n';
+  import { useTranslations } from '@/i18n';
+  import LocaleBar from '@/components/global/LocaleBar.astro';
+  import ProfileBar from '@/components/global/ProfileBar.astro';
+  import { SITE, HEADER } from '@/libs/config';
+  const { locale } = Astro.params;
+  const t = useTranslations(locale);
+
+  function getLocaleUrl(locales, path) {
+    const url = getRelativeLocaleUrl(locales, path)
+    if (url.indexOf('#')) {
+      return url.substring(0, url.length - 1)
+    }
+    return url
+  }
+---
+<section class="bg-default border-b border-default-deep/30">
+  <div class="w-full mx-auto md:px-12 px-8 max-w-7xl lg:px-16">
+    <div x-data="{ open: false }"
+      class="relative flex flex-col w-full py-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6">
+      <div class="flex flex-row items-center justify-between lg:justify-start">
+        <a href={getLocaleUrl(locale, '')} class="text-link hover:text-accent inline-flex items-center gap-3">
+          <img src="/assets/logo.svg" alt={SITE.name} />
+          <span class="font-bold font-display hidden">{SITE.name}</span>
+        </a>
+        <button @click="open = !open"
+          class="inline-flex items-center justify-center p-2 text-link hover:accent focus:outline-none focus:text-primary md:hidden">
+          <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+            <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <nav :class="{'flex': open, 'hidden': !open}"
+        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row">
+        {HEADER.menus.map(({ text, href }) => (
+          <a class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-link hover:text-accent first:lg:ml-auto" href={getLocaleUrl(locale, href)}>{t(text)}</a>
+        ))}
+        <div class="inline-flex items-center gap-2 list-none lg:ml-auto">
+          <ProfileBar />
+          <LocaleBar />
+        </div>
+      </nav>
+    </div>
+  </div>
+</section>

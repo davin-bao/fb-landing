@@ -1,0 +1,30 @@
+---
+import { useTranslations } from '@/i18n'
+const { locale } = Astro.params
+const t = useTranslations(locale)
+---
+<section>
+  <div
+    class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24">
+    <div>
+      <div class="text-center max-w-4xl mx-auto">
+        <p
+          class="text-primary-400 mt-8 font-extrabold lg:text-5xl text-4xl tracking-tight">
+          { t("index.hero.title") }
+        </p>
+        <p class="text-gray-500 lg:text-xl max-w-2xl mt-4 mx-auto text-base"  id="features">
+          { t("index.hero.tip") }
+        </p>
+      </div>
+    </div>
+    <div class="relative w-full mx-auto max-w-7xl items-center py-12 pb-12">
+      <div class="bg-gray-100 p-8 rounded-3xl" style="">
+        <img
+          alt=""
+          class="relative w-full border lg:rounded-2xl object-cover rounded shadow-2xl"
+          src="/assets/dashboard.gif"
+        />
+      </div>
+    </div>
+  </div>
+</section>

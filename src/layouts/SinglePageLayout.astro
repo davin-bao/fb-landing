@@ -1,0 +1,35 @@
+---
+import { Icon } from 'astro-icon/components';
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Navigation from "@/components/global/Navigation.astro";
+import Footer from "@/components/global/Footer.astro";
+
+const { entity = {} } = Astro.props
+const {
+			title,
+			excerpt,
+			image,
+			metadata: rawMataData,
+		} = entity.data
+const metadata = {
+	...rawMataData,
+	title,
+	description: excerpt,
+	openGraph: {
+        ...rawMataData?.openGraph,
+		...(image ? { images: [{ url: image, width: image?.width, height: image?.height }] } : {}),
+	},
+}
+---
+<BaseLayout metadata={metadata}>
+  <Navigation />
+  <article class="prose lg:prose-xl w-full mx-auto md:px-12 px-8 max-w-7xl lg:px-16 py-8 sm:py-16 lg:py-20">
+    <div>
+      <h1 class="text-center font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter">
+	  	{title}
+      </h1>
+    </div>
+    <slot />
+  </article>  
+  <Footer />
+</BaseLayout>
