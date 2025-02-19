@@ -13,28 +13,31 @@ jobs:
       id-token: write
 
     steps:
-      - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-      - name: Enable Corepack
-        run: corepack enable
+    - name: Enable Corepack
+      run: corepack enable
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: 'npm'
+    - name: Install Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: 'npm'
 
-      - name: Install dependencies
-        run: npm install
+    - name: Install dependencies
+      run: npm install
 
-      - name: Ensure NuxtHub module is installed
-        run: npx nuxthub@latest ensure
+    - name: Install Astro
+      run: npm install astro@latest
 
-      - name: Build application
-        run: npm run build
+    - name: Ensure NuxtHub module is installed
+      run: npx nuxthub@latest ensure
 
-      - name: Deploy to NuxtHub
-        uses: nuxt-hub/action@v1
-        id: deploy
-        with:
-          project-key: fb-landing-kbyn
+    - name: Build application
+      run: npm run build
+
+    - name: Deploy to NuxtHub
+      uses: nuxt-hub/action@v1
+      id: deploy
+      with:
+        project-key: fb-landing-kbyn
