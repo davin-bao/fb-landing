@@ -2,7 +2,7 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [ push ]
 jobs:
-  deploy:
+  build:
     name: "Deploy to NuxtHub"
     runs-on: ubuntu-latest
     environment:
@@ -12,7 +12,6 @@ jobs:
       contents: read
       id-token: write
     steps:
-    - name: Checkout
     - uses: actions/checkout@v4
     
     - name: Detect package manager
