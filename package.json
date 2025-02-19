@@ -7,14 +7,25 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "db:generate": "drizzle-kit generate:pg"
   },
   "dependencies": {
     "@nuxtjs/i18n": "^9.2.0",
     "nuxt": "^3.15.4",
     "shadcn-vue": "^0.11.3",
-    "vue": "latest",
+    "drizzle-orm": "^0.29.3",
     "vue-i18n": "^11.1.1",
+    "postgres": "^3.4.3",
+    "uid": "^2.0.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.2",
+    "@formkit/auto-animate": "^0.8.1",
+    "@nuxtjs/plausible": "latest",
+    "@nuxtjs/tailwindcss": "latest",
+    "drizzle-kit": "^0.20.10",
+    "vue": "latest",
     "vue-router": "latest"
   }
 }

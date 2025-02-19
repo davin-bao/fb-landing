@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1739954068757,
+      "tag": "0000_fancy_skullbuster",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1739955263343,
+      "tag": "0001_silky_mathemanic",
+      "breakpoints": true
+    }
+  ]
+}
