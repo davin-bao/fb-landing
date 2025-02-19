@@ -53,12 +53,8 @@ jobs:
     - name: Ensure NuxtHub module is installed
       run: npx nuxthub@latest ensure
 
-    - name: Build with Astro
-      run: |
-        ${{ steps.detect-package-manager.outputs.runner }} astro build
-
-    # - name: Build application
-    #   run: npm run build
+    - name: Build application
+      run: npm run build
 
     - name: Deploy to NuxtHub
       uses: nuxt-hub/action@v1
