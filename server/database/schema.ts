@@ -3,7 +3,7 @@ import { bigint, boolean, jsonb, pgTable, primaryKey, varchar } from 'drizzle-or
 export const user = pgTable('subscribe_user', {
   id: varchar('id').primaryKey(),
   email: varchar('email').notNull().unique(),
-  name: varchar('name').notNull(),
+  name: varchar('name'),
 })
 
 export type User = typeof user.$inferSelect

@@ -4,5 +4,3 @@ CREATE TABLE IF NOT EXISTS "subscribe_user" (
 	"name" varchar NOT NULL,
 	CONSTRAINT "subscribe_user_email_unique" UNIQUE("email")
 );
---> statement-breakpoint
-DROP TABLE "auth_user";

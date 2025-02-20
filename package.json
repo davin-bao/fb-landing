@@ -12,19 +12,30 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "^9.2.0",
-    "nuxt": "^3.15.4",
-    "shadcn-vue": "^0.11.3",
+    "@nuxtjs/seo": "^2.2.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "drizzle-orm": "^0.29.3",
-    "vue-i18n": "^11.1.1",
+    "lucide-vue-next": "^0.475.0",
+    "nuxt": "^3.15.4",
     "postgres": "^3.4.3",
-    "uid": "^2.0.2"
+    "radix-vue": "^1.9.15",
+    "shadcn-vue": "^0.11.3",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss-animate": "^1.0.7",
+    "uid": "^2.0.2",
+    "vue-i18n": "^11.1.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.2",
     "@formkit/auto-animate": "^0.8.1",
+    "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/plausible": "latest",
-    "@nuxtjs/tailwindcss": "latest",
+    "@nuxtjs/tailwindcss": "^6.13.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
     "drizzle-kit": "^0.20.10",
+    "shadcn-nuxt": "^0.11.3",
     "vue": "latest",
     "vue-router": "latest"
   }

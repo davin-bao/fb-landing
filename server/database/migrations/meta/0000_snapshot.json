@@ -1,11 +1,11 @@
 {
-  "id": "a581c19f-3e15-40a9-a8c5-8b8bbe2fb7d7",
+  "id": "9678f619-c5e8-40aa-ac56-90ed32fd2fa4",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "5",
   "dialect": "pg",
   "tables": {
-    "auth_user": {
-      "name": "auth_user",
+    "subscribe_user": {
+      "name": "subscribe_user",
       "schema": "",
       "columns": {
         "id": {
@@ -31,8 +31,8 @@
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {
-        "auth_user_email_unique": {
-          "name": "auth_user_email_unique",
+        "subscribe_user_email_unique": {
+          "name": "subscribe_user_email_unique",
           "nullsNotDistinct": false,
           "columns": [
             "email"
