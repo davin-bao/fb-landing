@@ -33,6 +33,7 @@ RUN npm run build
 # Remove development dependencies
 RUN npm prune --omit=dev
 
+RUN npm run db:push
 
 # Final stage for app image
 FROM base
