@@ -17,6 +17,7 @@ export default defineEventHandler(async (event) => {
     const subscribeUser = await userService.subscribe(name, email)
     return replySuccess(event, { id: subscribeUser.id })
   } catch (error) {
+    console.error(error)
     if (error.message.includes('subscribe_user_email_unique')) return replyError(event, 'email_exists')
     return replyError(event, 'internal server error', 500)
   }
