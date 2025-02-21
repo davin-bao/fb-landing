@@ -11,8 +11,6 @@ export default defineEventHandler(async (event) => {
   if (!u.success) return replyError(event, u.error?.name ?? "", u.error?.issues)
 
   const { email, name } = u.data
-  console.log("DATABASE_URL", process.env.DATABASE_URL)
-  console.log("NUXT_DATABASE_URL", process.env.NUXT_DATABASE_URL)
 
   console.log(u.data)
   try {
