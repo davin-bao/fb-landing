@@ -9,10 +9,7 @@ const userSchema = z.object({
 export default defineEventHandler(async (event) => {
   const u = await readValidatedBody(event, userSchema.safeParse)
   if (!u.success) return replyError(event, u.error?.name ?? "", u.error?.issues)
-
   const { email, name } = u.data
-
-  console.log(u.data)
   try {
     const subscribeUser = await userService.subscribe(name, email)
     return replySuccess(event, { id: subscribeUser.id })
