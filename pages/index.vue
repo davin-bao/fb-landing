@@ -1,12 +1,15 @@
 <script setup>
-import { Button } from '@/components/ui/button'
-
 const { setLocale } = useI18n()
 async function onSubmit() {
   await $fetch(`/api/user/subscribe`, {
     method: 'POST',
     body: { email: 'test@example.com', name: 'test' },
   })
+}
+const value = []
+function handleComplete(e) {
+  // eslint-disable-next-line no-alert
+  alert(e.join(''))
 }
 
 </script>
@@ -25,6 +28,15 @@ async function onSubmit() {
             <p class="text-gray-500 lg:text-xl max-w-2xl mt-4 mx-auto text-base"  id="features">
               {{ $t("index.hero.tip") }}
             </p>
+            <div class="flex w-full max-w-sm items-center gap-1.5">
+              <input
+                id="email"
+                class="bg-blackA5 shadow-blackA9 inline-flex h-[35px] w-[200px] appearance-none items-center justify-center rounded-[4px] px-[10px] text-[15px] leading-none text-white shadow-[0_0_0_1px] outline-none focus:shadow-[0_0_0_2px_black] selection:color-white selection:bg-blackA9"
+                type="email"
+                placeholder="Email"
+              />
+              <button class="bg-info hover:bg-accent" @click="onSubmit()">submit</button>
+            </div>
           </div>
         </div>
         <div class="relative w-full mx-auto max-w-7xl items-center py-12 pb-12">
@@ -38,11 +50,5 @@ async function onSubmit() {
         </div>
       </div>
     </section>
-    <div>
-      <button @click="setLocale('en')">en</button>
-      <button @click="setLocale('zh')">fr</button>
-      <Button class="text-primary-light" @click="onSubmit()">submit</Button>
-      <p>{{ $t('welcome') }}</p>
-    </div>
   </div>
 </template>

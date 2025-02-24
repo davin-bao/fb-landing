@@ -3,7 +3,7 @@ const { setLocale } = useI18n()
 </script>
 
 <template>
-  <div>
-    <RouterView />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
