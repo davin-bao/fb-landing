@@ -19,6 +19,21 @@
     "profile": "个人中心",
     "logout": "登出"
   },
+  "toHomeBtn": "返回首页",
+  "error": {
+    "404": {
+      "title": "页面未找到",
+      "tips": "抱歉，我们找不到您要找的页面。"
+    },
+    "403": {
+      "title": "禁止访问",
+      "tips": "抱歉，您没有权限访问此页面。"
+    },
+    "500": {
+      "title": "服务器错误",
+      "tips": "抱歉，服务器出现错误。"
+    }
+  },
   "index": {
     "hero": {
       "title": "Chrome 插件工具，可以帮助您整理Facebook ADS Library",

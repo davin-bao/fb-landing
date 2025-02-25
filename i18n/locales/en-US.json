@@ -19,6 +19,21 @@
     "profile": "Profile",
     "logout": "Logout"
   },
+  "toHomeBtn": "Back to Home",
+  "error": {
+    "404": {
+      "title": "Page Not Found",
+      "tips": "Sorry, we couldn't find the page you're looking for."
+    },
+    "403": {
+      "title": "Access Denied",
+      "tips": "Sorry, you don't have access to this page."
+    },
+    "500": {
+      "title": "Server Error",
+      "tips": "Sorry, something went wrong on our server."
+    }
+  },
   "index": {
     "hero": {
       "title": "A chrome plugin tool that can help you sorting Facebook ADS Library",
