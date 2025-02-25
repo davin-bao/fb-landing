@@ -12,7 +12,6 @@ const menus = [
 const open = ref(0)
 function handleOpen() {
   open.value = !open.value
-  console.log(open.value)
 }
 
 </script>
