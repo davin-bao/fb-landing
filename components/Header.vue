@@ -1,14 +1,9 @@
 <script setup>
 import LocaleBar from './LocaleBar'
+import { CONFIG } from '~/lib/config'
 
 const { setLocale } = useI18n()
-const siteName = 'Fb Ad Sorting Tool'
-const menus = [
-  { text:  'menu.features', href: '/#features' },
-  { text:  'menu.pricing', href: '/#pricing' },
-  { text:  'menu.blog', href: '/#blog' },
-  { text:  'menu.faq', href: '/#faq' }
-]
+
 const open = ref(0)
 function handleOpen() {
   open.value = !open.value
@@ -22,8 +17,8 @@ function handleOpen() {
       <div class="relative flex flex-col w-full py-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6">
         <div class="flex flex-row items-center justify-between lg:justify-start">
           <a href="/" class="text-link hover:text-accent inline-flex items-center gap-3">
-            <img src="/assets/images/logo.svg" :alt="siteName" />
-            <span class="font-bold font-display hidden">{{ siteName }}</span>
+            <img src="/assets/images/logo.svg" :alt="CONFIG.siteName" />
+            <span class="font-bold font-display hidden">{{ CONFIG.siteName }}</span>
           </a>
           <button @click="handleOpen"
             class="inline-flex items-center justify-center p-2 text-link hover:accent focus:outline-none focus:text-primary md:hidden">
@@ -36,7 +31,7 @@ function handleOpen() {
           </button>
         </div>
         <nav :class="{ hidden: !open, flex: open }" class="flex flex-col items-center flex-grow md:pb-0 md:flex md:justify-end md:flex-row lg:flex">
-          <a v-for="menu in menus" class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-link hover:text-accent first:lg:ml-auto" :href="menu.href">{{$t(menu.text)}}</a>
+          <a v-for="menu in CONFIG.header.menus" class="px-2 lg:px-6 py-2 md:px-3 text-sm font-medium text-link hover:text-accent first:lg:ml-auto" :href="menu.href">{{$t(menu.text)}}</a>
           <div class="inline-flex items-center gap-2 list-none lg:ml-auto">
             <LocaleBar />
           </div>

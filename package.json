@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "fb.ad.sorting.tool",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,6 +12,7 @@
     "db:push": "drizzle-kit push:pg"
   },
   "dependencies": {
+    "@nuxt/content": "^3.2.2",
     "@nuxtjs/i18n": "^9.2.0",
     "@nuxtjs/seo": "^2.2.0",
     "@vueuse/core": "^12.7.0",

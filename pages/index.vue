@@ -1,17 +1,14 @@
 <script setup>
 import Hero from '~/components/index/Hero.vue'
 import Testimonial from '~/components/index/Testimonial.vue'
-const { setLocale } = useI18n()
+import seo from '~/lib/seo.js'
+seo({ title: 'Home', description: 'A chrome plugin tool that can help you sorting Facebook ADS Library.' })
+
 async function onSubmit() {
   await $fetch(`/api/user/subscribe`, {
     method: 'POST',
     body: { email: 'test@example.com', name: 'test' },
   })
-}
-const value = []
-function handleComplete(e) {
-  // eslint-disable-next-line no-alert
-  alert(e.join(''))
 }
 
 </script>

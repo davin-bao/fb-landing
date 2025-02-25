@@ -1,7 +1,4 @@
 <script setup>
-// 定义图片基础路径
-import imageBasePath from '@/assets/images/avatar/Emma Johnson.jpg';
-
 const imageModules = import.meta.glob('/assets/images/avatar/*.(jpg|png|jpeg|gif)', { eager: true });
 const testimonialImages = ref([])
 for (const path in imageModules) {
@@ -18,6 +15,7 @@ for (const path in imageModules) {
       <div class="max-w-2xl mx-auto md:text-center">
         <h2
           class="text-black font-extrabold lg:text-5xl text-4xl tracking-tight"
+           id="testimonial"
         >
           {{ $t("testimonial-title") }}
         </h2>

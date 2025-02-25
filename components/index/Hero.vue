@@ -11,7 +11,7 @@
               class="text-primary-400 mt-8 font-extrabold lg:text-5xl text-4xl tracking-tight">
               {{ $t("index.hero.title") }}
             </p>
-            <p class="text-gray-500 lg:text-xl max-w-2xl mt-4 mx-auto text-base"  id="features">
+            <p class="text-gray-500 lg:text-xl max-w-2xl mt-4 mx-auto text-base" id="features">
               {{ $t("index.hero.tip") }}
             </p>
             <div class="flex w-full max-w-sm items-center gap-1.5">
