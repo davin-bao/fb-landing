@@ -8,13 +8,13 @@ for (const path in imageModules) {
 </script>
 
 <template>
-  <section class="bg-gray-100">
+  <section class="bg-muted">
     <div
       class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24"
     >
       <div class="max-w-2xl mx-auto md:text-center">
         <h2
-          class="text-black font-extrabold lg:text-5xl text-4xl tracking-tight"
+          class="text-foreground font-extrabold lg:text-5xl text-4xl tracking-tight"
            id="testimonial"
         >
           {{ $t("testimonial-title") }}
@@ -25,20 +25,20 @@ for (const path in imageModules) {
         class="max-w-2xl mx-auto mt-16 lg:mt-20 lg:max-w-none flex w-full flex-wrap"
       >
         <li v-for="i in 8" class="md:w-1/3 p-3">
-          <figure class="relative h-full p-6 bg-white rounded-3xl">
+          <figure class="relative h-full p-6 bg-card rounded-3xl">
             <blockquote class="relative">
-              <p class="text-base text-gray-500">{{ $t('testimonial.' + i + '.content') }}</p>
+              <p class="text-base text-muted-foreground">{{ $t('testimonial.' + i + '.content') }}</p>
             </blockquote>
             <figcaption
               class="relative flex items-center justify-between pt-6 mt-6 border-t border-gray-100"
             >
               <div>
                 <div
-                  class="text-lg font-semibold leading-6 text-black font-display"
+                  class="text-lg font-semibold leading-6 text-foreground font-display"
                 >
                   {{ $t('testimonial.' + i + '.author') }}
                 </div>
-                <div class="mt-1 text-sm text-gray-500">{{ $t('testimonial.' + i + '.position') }}</div>
+                <div class="mt-1 text-sm text-muted-foreground">{{ $t('testimonial.' + i + '.position') }}</div>
               </div>
               <div class="overflow-hidden rounded-full bg-gray-50">
                 <img alt="" :src="testimonialImages[i]" width="56"

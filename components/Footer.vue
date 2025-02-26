@@ -11,20 +11,20 @@ import { CONFIG } from '~/lib/config'
       <div class="grid grid-cols-2 items-start gap-8 gap-y-24 xl:col-span-4">
         <a
           href="/"
-          class="xl:col-span-1 text-link inline-flex items-center gap-3"
+          class="xl:col-span-1 text-foreground inline-flex items-center gap-3"
         >
           <img src="/assets/images/logo.svg" :alt="CONFIG.title" />
         </a>
         <div class="md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-8">
           <div v-for="item of CONFIG.footer.links">
-            <h3 class="text-lg text-link font-medium tracking-tight">
+            <h3 class="text-lg text-foreground font-medium tracking-tight">
               {{ $t(item.title) }}
             </h3>
             <ul v-if="item.links && Array.isArray(item.links) && item.links.length > 0" role="list" class="mt-4 space-y-1">
               <li v-for="link of item.links">
                 <a
                   :href="link.href"
-                  class="text-base text-link-light hover:text-accent"
+                  class="text-base text-foreground-light hover:text-accent"
                 >
                   {{$t(link.text)}}
                 </a>
@@ -35,7 +35,7 @@ import { CONFIG } from '~/lib/config'
       </div>
     </div>
   </footer>
-  <footer class="bg-default border-t">
+  <footer class="bg-card border-muted border-t">
     <div
       class="items-center px-8 mx-auto py-6 md:px-12 lg:px-16 xl:px-36 2xl:max-w-7xl"
     >

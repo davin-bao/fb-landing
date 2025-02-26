@@ -26,7 +26,7 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div class="bg-background">
     <Header />
     <slot />
     <Footer />
