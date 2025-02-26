@@ -37,7 +37,21 @@
   "index": {
     "hero": {
       "title": "Chrome 插件工具，可以帮助您整理Facebook ADS Library",
-      "tip": "您可以通过使用量重新排序Facebook广告"
+      "tip": "您可以通过使用量重新排序Facebook广告",
+      "subscribe": {
+        "placeholder": "输入您的邮箱地址",
+        "btn": "抢先体验",
+        "error": {
+          "required_email": "请输入您的邮箱地址",
+          "invalid_string_email": "请输入有效的邮箱地址",
+          "inernal_error": "抱歉，出现了一些问题，请稍后再试。",
+          "email_exists": "此邮箱地址已经订阅过。"
+        },
+        "success": {
+          "title": "感谢您的订阅！",
+          "tips": "我们将在插件发布时第一时间通知您。"
+        }
+      }
     }
   },
   "pricing": {

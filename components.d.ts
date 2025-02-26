@@ -8,6 +8,14 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AlertDialogAction: typeof import('radix-vue')['AlertDialogAction']
+    AlertDialogCancel: typeof import('radix-vue')['AlertDialogCancel']
+    AlertDialogContent: typeof import('radix-vue')['AlertDialogContent']
+    AlertDialogDescription: typeof import('radix-vue')['AlertDialogDescription']
+    AlertDialogOverlay: typeof import('radix-vue')['AlertDialogOverlay']
+    AlertDialogPortal: typeof import('radix-vue')['AlertDialogPortal']
+    AlertDialogRoot: typeof import('radix-vue')['AlertDialogRoot']
+    AlertDialogTitle: typeof import('radix-vue')['AlertDialogTitle']
     Label: typeof import('radix-vue')['Label']
     PinInputInput: typeof import('radix-vue')['PinInputInput']
     PinInputRoot: typeof import('radix-vue')['PinInputRoot']

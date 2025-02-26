@@ -37,7 +37,21 @@
   "index": {
     "hero": {
       "title": "A chrome plugin tool that can help you sorting Facebook ADS Library",
-      "tip": "You can resort facebook ads by uses."
+      "tip": "You can resort facebook ads by uses.",
+      "subscribe": {
+        "placeholder": "Your best email…",
+        "btn": "Early access",
+        "error": {
+          "required_email": "Please enter your email address",
+          "invalid_string_email": "Please enter a valid email address",
+          "inernal_error": "Sorry, something went wrong, please try again later.",
+          "email_exists": "This email address has already been subscribed."
+        },
+        "success": {
+          "title": "Thank you for subscribing!",
+          "tips": "We will notify you as soon as the plugin is released."
+        }
+      }
     }
   },
   "pricing": {
