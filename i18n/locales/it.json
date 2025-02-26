@@ -1,0 +1,131 @@
+{
+    "menu": {
+        "product": "Prodotto",
+        "features": "Caratteristiche",
+        "faq": "FAQ",
+        "testimonial": "Cosa dicono gli utenti",
+        "blog": "Blog",
+        "pricing": "Tariffazione",
+        "support": "Supporto",
+        "terms": "Termini e condizioni",
+        "privacy": "Politica sulla privacy",
+        "extensions": {
+            "privacy": "Politica sulla privacy delle estensioni"
+        },
+        "resource": "Risorsa",
+        "signUp": "Iscriviti",
+        "login": "Accedi",
+        "tags": "Etichette",
+        "profile": "Profilo",
+        "logout": "Esci"
+    },
+    "toHomeBtn": "Torna alla Home",
+    "error": {
+        "404": {
+            "title": "Pagina non trovata",
+            "tips": "Mi dispiace, non abbiamo trovato la pagina che stai cercando."
+        },
+        "403": {
+            "title": "Accesso negato",
+            "tips": "Mi dispiace, non hai accesso a questa pagina."
+        },
+        "500": {
+            "title": "Errore del server",
+            "tips": "Mi dispiace, qualcosa è andato storto sul nostro server."
+        }
+    },
+    "index": {
+        "hero": {
+            "title": "Uno strumento plugin per Chrome che può aiutarti a ordinare la libreria di annunci di Facebook",
+            "tip": "Puoi riordinare gli annunci di Facebook in base all'uso.",
+            "subscribe": {
+                "placeholder": "La tua migliore e - mail...",
+                "btn": "Accesso anticipato",
+                "error": {
+                    "required_email": "Per favore, inserisci la tua e - mail",
+                    "invalid_string_email": "Per favore, inserisci un indirizzo e - mail valido",
+                    "inernal_error": "Mi dispiace, qualcosa è andato storto, riprova più tardi.",
+                    "email_exists": "Questo indirizzo e - mail è già iscritto."
+                },
+                "success": {
+                    "title": "Grazie per l'iscrizione!",
+                    "tips": "Ti notificheremo non appena il plugin sarà pubblicato."
+                }
+            }
+        }
+    },
+    "pricing": {
+        "headTips": "Offriamo un piano gratuito per tutti gli utenti e un piano premium per chi vuole sbloccare ulteriori caratteristiche.",
+        "free": "Gratuito",
+        "custom": "Personalizzato",
+        "commingSoon": "Prossimamente disponibile",
+        "charging": "Caricamento",
+        "perMonth": "al mese",
+        "perYear": " all'anno",
+        "unlimited": "Illimitato",
+        "getStartBtn": "Inizia",
+        "subscribeBtn": "Iscriviti",
+        "freeTips": "Inizia gratuitamente",
+        "otherTips": "Nessuna carta di credito richiesta. Puoi disdire in qualsiasi momento.",
+        "label": [
+            "Volume di dati ordinati"
+        ]
+    },
+    "testimonial - title": "Cosa dicono i nostri utenti",
+    "testimonial": [
+        {
+            "content": "Questo plugin è molto utile, può facilmente ordinare gli annunci in base alla quantità di utilizzo, risparmiandomi molto tempo.",
+            "author": "Emma Johnson",
+            "position": "Responsabile di campagne pubblicitarie",
+            "avatar": "Emma Johnson.jpg"
+        },
+        {
+            "content": "Fb Ad Sorter migliora notevolmente l'efficienza del filtraggio degli annunci, presenta un'interfaccia pulita e intuitiva e rende l'ordinamento degli annunci incredibilmente comodo. Altamente raccomandato!",
+            "author": "William Brown",
+            "position": "Specialista in pubblicità digitale",
+            "avatar": "William Brown.jpg"
+        },
+        {
+            "content": "Semplifica il flusso di lavoro di screening degli annunci e rende l'analisi degli annunci più visiva e diretta. Un dono per i professionisti della pubblicità! Questo plugin ha notevolmente migliorato la mia produttività al lavoro.",
+            "author": "John Smith",
+            "position": "Responsabile di pubblicità sui social media",
+            "avatar": "John Smith.jpg"
+        },
+        {
+            "content": "Finalmente c'è uno strumento che può trovare rapidamente gli annunci popolari. È davvero comodo!",
+            "author": "Olivia Jones",
+            "position": "Stratega in pubblicità programmata",
+            "avatar": "Olivia Jones.jpg"
+        },
+        {
+            "content": "L'ordinamento degli annunci è super utile e ha davvero aumentato la mia efficienza al lavoro.",
+            "author": "James Davis",
+            "position": "Analista di ricerca pagata",
+            "avatar": "James Davis.jpg"
+        },
+        {
+            "content": "Ordina gli annunci con un clic, risparmiando tempo e sforzo. Nessun filtraggio manuale più. Il plugin funziona senza intoppi e i risultati di ordinamento degli annunci sono impressionanti. Molto soddisfatto.",
+            "author": "Sophia Garcia",
+            "position": "Coordinatore di pubblicità a display",
+            "avatar": "Sophia Garcia.jpg"
+        },
+        {
+            "content": "L'ordinamento degli annunci nella libreria di annunci è ora super chiaro e trovare annunci è diventato molto più facile. È davvero comodo, semplice da usare e molto pratico. Ottimo lavoro!",
+            "author": "Benjamin Martinez",
+            "position": "Responsabile delle operazioni pubblicitarie",
+            "avatar": "Benjamin Martinez.jpg"
+        },
+        {
+            "content": "Facile da usare, interfaccia pulita, questo plugin rende la gestione degli annunci molto più efficiente e l'esperienza utente è fantastica.",
+            "author": "Isabella Wilson",
+            "position": "Direttore di marketing performance",
+            "avatar": "Isabella Wilson.jpg"
+        },
+        {
+            "content": "Questa è un'estensione fantastica! Ordina rapidamente gli annunci in base all'uso, super comodo. Altamente raccomandato a tutti!",
+            "author": "Michael Taylor",
+            "position": "Analista di pubblicità multimediale",
+            "avatar": "Michael Taylor.jpg"
+        }
+    ]
+}

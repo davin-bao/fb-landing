@@ -1,0 +1,131 @@
+{
+    "menu": {
+        "product": "產品",
+        "features": "特性",
+        "faq": "常見問題",
+        "testimonial": "用戶評價",
+        "blog": "文章",
+        "pricing": "價格",
+        "support": "支援",
+        "terms": "條件與條款",
+        "privacy": "隱私協議",
+        "extensions": {
+            "privacy": "瀏覽器擴展隱私政策"
+        },
+        "resource": "資源",
+        "signUp": "註冊",
+        "login": "登入",
+        "tags": "標籤",
+        "profile": "個人中心",
+        "logout": "登出"
+    },
+    "toHomeBtn": "返回首頁",
+    "error": {
+        "404": {
+            "title": "頁面未找到",
+            "tips": "抱歉，我們找不到您要找的頁面。"
+        },
+        "403": {
+            "title": "禁止訪問",
+            "tips": "抱歉，您沒有權限訪問此頁面。"
+        },
+        "500": {
+            "title": "伺服器錯誤",
+            "tips": "抱歉，伺服器出現錯誤。"
+        }
+    },
+    "index": {
+        "hero": {
+            "title": "Chrome 插件工具，可以幫助您整理Facebook ADS Library",
+            "tip": "您可以通過使用量重新排序Facebook廣告",
+            "subscribe": {
+                "placeholder": "輸入您的郵箱地址",
+                "btn": "搶先體驗",
+                "error": {
+                    "required_email": "請輸入您的郵箱地址",
+                    "invalid_string_email": "請輸入有效的郵箱地址",
+                    "inernal_error": "抱歉，出現了一些問題，請稍後再試。",
+                    "email_exists": "此郵箱地址已經訂閱過。"
+                },
+                "success": {
+                    "title": "感謝您的訂閱！",
+                    "tips": "我們將在插件發佈時第一時間通知您。"
+                }
+            }
+        }
+    },
+    "pricing": {
+        "headTips": "我們為所有用戶提供免費計劃，並為那些想要解鎖更多功能的人提供額外計劃。",
+        "free": "免費",
+        "custom": "商議價",
+        "comingSoon": "即將推出",
+        "charging": "僅需支付",
+        "perMonth": "月",
+        "perYear": "一年",
+        "unlimited": "無限制",
+        "getStartBtn": "開始",
+        "subscribeBtn": "訂閱",
+        "freeTips": "免費使用",
+        "otherTips": "不需要信用卡，可隨時取消。",
+        "label": [
+            "可排序資料量"
+        ]
+    },
+    "testimonial - title": "用戶評價",
+    "testimonial": [
+        {
+            "content": "這個插件非常實用，能夠輕鬆按照使用量對廣告進行排序，節省了我很多時間。",
+            "author": "Emma Johnson",
+            "position": "Ad Campaign Manager",
+            "avatar": "Emma Johnson.jpg"
+        },
+        {
+            "content": "Fb Ad Sorter 使廣告篩選效率提高了很多，界面簡潔直觀，廣告排序非常方便，強烈推薦！",
+            "author": "William Brown",
+            "position": "Digital Advertising Specialist",
+            "avatar": "William Brown.jpg"
+        },
+        {
+            "content": "簡化了廣告篩選流程，讓廣告分析變得更加直觀。廣告人的福音！這個插件大大提升了我的工作效率。",
+            "author": "John Smith",
+            "position": "Social Media Advertising Manager",
+            "avatar": "John Smith.jpg"
+        },
+        {
+            "content": "終於有了這樣一款工具，可以快速找到熱門廣告，真的太方便了！",
+            "author": "Olivia Jones",
+            "position": "Programmatic Ad Strategist",
+            "avatar": "Olivia Jones.jpg"
+        },
+        {
+            "content": "廣告排序功能非常好用，大大提高了我的工作效率。",
+            "author": "James Davis",
+            "position": "Paid Search Analyst",
+            "avatar": "James Davis.jpg"
+        },
+        {
+            "content": "一鍵排序廣告，省時省力，再也不用手動篩選了。插件運行流暢，廣告排序效果顯著，非常滿意。",
+            "author": "Sophia Garcia",
+            "position": "Display Advertising Coordinator",
+            "avatar": "Sophia Garcia.jpg"
+        },
+        {
+            "content": "廣告庫的排序一目了然，找廣告變得輕鬆多了。用起來非常順手，操作簡單，功能實用，讚一個！",
+            "author": "Benjamin Martinez",
+            "position": "Ad Operations Manager",
+            "avatar": "Benjamin Martinez.jpg"
+        },
+        {
+            "content": "操作簡單，界面簡潔，這個插件讓廣告管理變得更加高效，使用體驗非常好。",
+            "author": "Isabella Wilson",
+            "position": "Performance Marketing Director",
+            "avatar": "Isabella Wilson.jpg"
+        },
+        {
+            "content": "很棒的插件，能夠快速根據使用量對廣告進行排序，太方便了，推薦給大家！",
+            "author": "Michael Taylor",
+            "position": "Media Advertising Analyst",
+            "avatar": "Michael Taylor.jpg"
+        }
+    ]
+}

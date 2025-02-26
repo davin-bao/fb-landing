@@ -1,0 +1,131 @@
+{
+    "menu": {
+        "product": "Produkt",
+        "features": "Funktionen",
+        "faq": "FAQ",
+        "testimonial": "Was Benutzer sagen",
+        "blog": "Blog",
+        "pricing": "Preise",
+        "support": "Support",
+        "terms": "Allgemeine Geschäftsbedingungen",
+        "privacy": "Datenschutzrichtlinie",
+        "extensions": {
+            "privacy": "Erweiterungs-Datenschutzrichtlinie"
+        },
+        "resource": "Ressource",
+        "signUp": "Anmelden",
+        "login": "Einloggen",
+        "tags": "Tags",
+        "profile": "Profil",
+        "logout": "Abmelden"
+    },
+    "toHomeBtn": "Zurück zur Startseite",
+    "error": {
+        "404": {
+            "title": "Seite nicht gefunden",
+            "tips": "Entschuldigung, wir konnten die von Ihnen gesuchte Seite nicht finden."
+        },
+        "403": {
+            "title": "Zugang verweigert",
+            "tips": "Entschuldigung, Sie haben keinen Zugang zu dieser Seite."
+        },
+        "500": {
+            "title": "Serverfehler",
+            "tips": "Entschuldigung, es ist ein Fehler auf unserem Server aufgetreten."
+        }
+    },
+    "index": {
+        "hero": {
+            "title": "Ein Chrome-Plugin-Tool, mit dem Sie die Facebook ADS Library sortieren können",
+            "tip": "Sie können Facebook-Werbung nach Verwendungszwecken neu sortieren.",
+            "subscribe": {
+                "placeholder": "Ihre beste E-Mail-Adresse…",
+                "btn": "Frühen Zugang",
+                "error": {
+                    "required_email": "Bitte geben Sie Ihre E-Mail-Adresse ein",
+                    "invalid_string_email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+                    "inernal_error": "Entschuldigung, es ist etwas schief gelaufen, versuchen Sie es später erneut.",
+                    "email_exists": "Diese E-Mail-Adresse ist bereits registriert."
+                },
+                "success": {
+                    "title": "Vielen Dank für Ihre Anmeldung!",
+                    "tips": "Wir werden Sie benachrichtigen, sobald das Plugin veröffentlicht ist."
+                }
+            }
+        }
+    },
+    "pricing": {
+        "headTips": "Wir bieten einen kostenlosen Plan für alle Benutzer und einen Premium-Plan für diejenigen, die mehr Funktionen freischalten möchten.",
+        "free": "Kostenlos",
+        "custom": "Angepasst",
+        "commingSoon": "Bald verfügbar",
+        "charging": "Abrechnung",
+        "perMonth": "monatlich",
+        "perYear": " pro Jahr",
+        "unlimited": "Unbegrenzt",
+        "getStartBtn": "Loslegen",
+        "subscribeBtn": "Abonnieren",
+        "freeTips": "Kostenlos loslegen",
+        "otherTips": "Keine Kreditkarte erforderlich. Kündigen Sie jederzeit.",
+        "label": [
+            "Sortierte Datenmengen"
+        ]
+    },
+    "testimonial-title": "Was unsere Benutzer sagen",
+    "testimonial": [
+        {
+            "content": "Dieses Plugin ist sehr nützlich, es kann Werbung einfach nach der Nutzungsmenge sortieren und spart mir viel Zeit.",
+            "author": "Emma Johnson",
+            "position": "Werbekampagnenmanagerin",
+            "avatar": "Emma Johnson.jpg"
+        },
+        {
+            "content": "Fb Ad Sorter verbessert die Effizienz der Werbefilterung erheblich, hat eine saubere und intuitive Schnittstelle und macht das Sortieren von Werbung unglaublich bequem. Sehr zu empfehlen!",
+            "author": "William Brown",
+            "position": "Digitaler Werbeberater",
+            "avatar": "William Brown.jpg"
+        },
+        {
+            "content": "Vereinfacht den Werbeauswahl-Workflow und macht die Werbeanalyse visueller und einfacher. Ein Segen für Werbeberufe! Dieses Plugin hat meine Arbeitsleistung erheblich verbessert.",
+            "author": "John Smith",
+            "position": "Manager für Social Media-Werbung",
+            "avatar": "John Smith.jpg"
+        },
+        {
+            "content": "Endlich gibt es ein Tool, mit dem man beliebte Werbebeiträge schnell finden kann. Es ist wirklich bequem!",
+            "author": "Olivia Jones",
+            "position": "Programmatischer Werbestrateg",
+            "avatar": "Olivia Jones.jpg"
+        },
+        {
+            "content": "Das Sortieren von Werbung ist super nützlich und hat meine Arbeitsleistung wirklich gesteigert.",
+            "author": "James Davis",
+            "position": "Analytiker für bezahlte Suchmaschinenwerbung",
+            "avatar": "James Davis.jpg"
+        },
+        {
+            "content": "Sortieren Sie Werbung mit einem Klick, sparen Sie Zeit und Mühe. Keine manuellen Filterung mehr. Das Plugin läuft reibungslos und die Sortierergebnisse für die Werbung sind beeindruckend. Sehr zufrieden.",
+            "author": "Sophia Garcia",
+            "position": "Koordinatorin für Display-Werbung",
+            "avatar": "Sophia Garcia.jpg"
+        },
+        {
+            "content": "Das Sortieren von Werbung in der Werbelibrary ist jetzt super klar und das Finden von Werbung ist viel einfacher geworden. Es ist wirklich praktisch, einfach zu bedienen und sehr nützlich. Großartig gemacht!",
+            "author": "Benjamin Martinez",
+            "position": "Operationsmanager für Werbung",
+            "avatar": "Benjamin Martinez.jpg"
+        },
+        {
+            "content": "Leicht zu bedienen, saubere Schnittstelle, dieses Plugin macht die Werbeverwaltung viel effizienter und die Benutzererfahrung ist großartig.",
+            "author": "Isabella Wilson",
+            "position": "Leiterin für Performance-Marketing",
+            "avatar": "Isabella Wilson.jpg"
+        },
+        {
+            "content": "Dies ist eine tolle Erweiterung! Es sortiert Werbung schnell nach der Nutzung, super bequem. Sehr zu empfehlen für alle!",
+            "author": "Michael Taylor",
+            "position": "Analytiker für Medienwerbung",
+            "avatar": "Michael Taylor.jpg"
+        }
+    ]
+}

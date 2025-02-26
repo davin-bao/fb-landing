@@ -1,0 +1,131 @@
+{
+    "menu": {
+        "product": "Produit",
+        "features": "Caractéristiques",
+        "faq": "FAQ",
+        "testimonial": "Ce que les utilisateurs disent",
+        "blog": "Blog",
+        "pricing": "Tarifs",
+        "support": "Support",
+        "terms": "Conditions générales",
+        "privacy": "Politique de confidentialité",
+        "extensions": {
+            "privacy": "Politique de confidentialité des extensions"
+        },
+        "resource": "Ressource",
+        "signUp": "S'inscrire",
+        "login": "Se connecter",
+        "tags": "Tags",
+        "profile": "Profil",
+        "logout": "Se déconnecter"
+    },
+    "toHomeBtn": "Retour à l'accueil",
+    "error": {
+        "404": {
+            "title": "Page non trouvée",
+            "tips": "Désolé, nous n'avons pas trouvé la page que vous cherchez."
+        },
+        "403": {
+            "title": "Accès refusé",
+            "tips": "Désolé, vous n'avez pas accès à cette page."
+        },
+        "500": {
+            "title": "Erreur du serveur",
+            "tips": "Désolé, une erreur est survenue sur notre serveur."
+        }
+    },
+    "index": {
+        "hero": {
+            "title": "Un outil de plugin Chrome qui peut vous aider à trier la bibliothèque d'annonces Facebook",
+            "tip": "Vous pouvez trier les annonces Facebook par utilisation.",
+            "subscribe": {
+                "placeholder": "Votre meilleure adresse e-mail…",
+                "btn": "Accès anticipé",
+                "error": {
+                    "required_email": "Veuillez saisir votre adresse e-mail",
+                    "invalid_string_email": "Veuillez saisir une adresse e-mail valide",
+                    "inernal_error": "Désolé, une erreur s'est produite, veuillez réessayer plus tard.",
+                    "email_exists": "Cette adresse e-mail est déjà inscrite."
+                },
+                "success": {
+                    "title": "Merci de vous être inscrit!",
+                    "tips": "Nous vous notifierons dès que le plugin sera publié."
+                }
+            }
+        }
+    },
+    "pricing": {
+        "headTips": "Nous offrons un plan gratuit pour tous les utilisateurs et un plan premium pour ceux qui souhaitent débloquer plus de fonctionnalités.",
+        "free": "Gratuit",
+        "custom": "Personnalisé",
+        "commingSoon": "Bientôt disponible",
+        "charging": "Facturation",
+        "perMonth": "par mois",
+        "perYear": " par an",
+        "unlimited": "Illimité",
+        "getStartBtn": "Commencer",
+        "subscribeBtn": "S'abonner",
+        "freeTips": "Commencez gratuitement",
+        "otherTips": "Aucune carte de crédit requise. Annulation possible à tout moment.",
+        "label": [
+            "Volumes de données triés"
+        ]
+    },
+    "testimonial-title": "Ce que nos utilisateurs disent",
+    "testimonial": [
+        {
+            "content": "Ce plugin est très utile, il peut facilement trier les annonces par quantité d'utilisation, ce qui me gagne beaucoup de temps.",
+            "author": "Emma Johnson",
+            "position": "Directrice de campagne publicitaire",
+            "avatar": "Emma Johnson.jpg"
+        },
+        {
+            "content": "Fb Ad Sorter améliore considérablement l'efficacité du filtrage des annonces, dispose d'une interface claire et intuitive et rend le tri des annonces incroyablement pratique. Très recommandé!",
+            "author": "William Brown",
+            "position": "Spécialiste en publicité numérique",
+            "avatar": "William Brown.jpg"
+        },
+        {
+            "content": "Simplifie le workflow de tri des annonces et rend l'analyse des annonces plus visuelle et plus directe. Un vrai coup de chance pour les professionnels de la publicité! Ce plugin a considérablement amélioré ma productivité au travail.",
+            "author": "John Smith",
+            "position": "Directeur de publicité sur les médias sociaux",
+            "avatar": "John Smith.jpg"
+        },
+        {
+            "content": "Enfin, il existe un outil qui peut rapidement trouver les annonces populaires. C'est vraiment pratique!",
+            "author": "Olivia Jones",
+            "position": "Stratège en publicité programmée",
+            "avatar": "Olivia Jones.jpg"
+        },
+        {
+            "content": "Trier les annonces est super utile et a vraiment augmenté mon efficacité au travail.",
+            "author": "James Davis",
+            "position": "Analyste de recherche payante",
+            "avatar": "James Davis.jpg"
+        },
+        {
+            "content": "Triez les annonces avec un clic, économisez du temps et des efforts. Plus de filtrage manuel. Le plugin fonctionne parfaitement et les résultats de tri des annonces sont impressionnants. Très satisfait.",
+            "author": "Sophia Garcia",
+            "position": "Coordinateur de publicité affichée",
+            "avatar": "Sophia Garcia.jpg"
+        },
+        {
+            "content": "Trier les annonces dans la bibliothèque d'annonces est maintenant super clair et trouver des annonces est devenu tellement plus facile. C'est vraiment pratique, simple à utiliser et très utile. Excellent travail!",
+            "author": "Benjamin Martinez",
+            "position": "Directeur des opérations publicitaires",
+            "avatar": "Benjamin Martinez.jpg"
+        },
+        {
+            "content": "Facile à utiliser, interface claire, ce plugin rend la gestion des annonces bien plus efficace et l'expérience utilisateur est géniale.",
+            "author": "Isabella Wilson",
+            "position": "Directrice de marketing performance",
+            "avatar": "Isabella Wilson.jpg"
+        },
+        {
+            "content": "C'est une incroyable extension! Elle trie rapidement les annonces par utilisation, super pratique. Très recommandé à tout le monde!",
+            "author": "Michael Taylor",
+            "position": "Analyste de publicité médiatique",
+            "avatar": "Michael Taylor.jpg"
+        }
+    ]
+}
