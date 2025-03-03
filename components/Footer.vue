@@ -31,6 +31,17 @@ import { CONFIG } from '~/lib/config'
               </li>
             </ul>
           </div>
+          <div>
+            <h3 class="text-lg text-foreground font-medium tracking-tight">
+              Share
+            </h3>
+            <div class="flex w-full flex-wrap mt-4 gap-1 text-white">
+              <SocialShare network="facebook" :styled="true" :label="false" />
+              <SocialShare network="x" :styled="true" :label="false" />
+              <SocialShare network="linkedin" :styled="true" :label="false" />
+              <SocialShare network="pinterest" :styled="true" :label="false" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

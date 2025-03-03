@@ -24,6 +24,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'radix-vue/nuxt',
     '@nuxt/content',
+    '@stefanobartoletti/nuxt-social-share'
   ],
   devtools: { enabled: true },
   runtimeConfig: {
@@ -64,5 +65,8 @@ export default defineNuxtConfig({
   routeRules: {
     // use the `index` shortcut for simple rules
     '/secret/**': { robots: false },
+  },
+  socialShare: {
+    baseUrl: 'https://www.fbadsorter.com'
   }
 })
